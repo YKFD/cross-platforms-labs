@@ -1,7 +1,32 @@
 {{page-title "Labs2"}}
-
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<section class="content">
+    <div class="input-block">
+        <Input @type="text" @value={{fullName}} @placeholder="ПІБ" />
+        <Input @type="text" @value={{phoneNumber}} @placeholder="Номер телефону" />
+        <button onclick={{action this.addValue}}>Додати</button>
+    </div>
+    <div class="switch-block">
+        <p>
+            Показати список
+        </p>
+        <label class="switch">
+            <Input @type="checkbox" @checked={{showList}} />
+            <span class="slider round"></span>
+        </label>
+    </div>
+    {{#if showList}}
+    <div>
+        <ul class="list-style">
+            {{#each this.list as |item index|}}
+            <li class="list-item">
+                <div class="list-content">
+                    {{item.fullName}}
+                    <button onclick={{action this.removeValue index}}>Видалити</button>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+</section>
 {{outlet}}
