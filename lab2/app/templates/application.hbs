@@ -1,0 +1,35 @@
+{{page-title "Labs2"}}
+<section class="content">
+    <div class="input-block">
+        <Input @type="text" @value={{fullName}} @placeholder="ПІБ" />
+        <Input @type="text" @value={{phoneNumber}} @placeholder="Номер телефону" />
+        <button onclick={{action this.addValue}}>Додати</button>
+    </div>
+    <div class="switch-block">
+        <p>
+            Показати список
+        </p>
+        <label class="switch">
+            <Input @type="checkbox" @checked={{showList}} />
+            <span class="slider round"></span>
+        </label>
+    </div>
+    {{#if showList}}
+    <div>
+        <ul class="list-style">
+            {{#each this.list as |item index|}}
+            <li class="list-item">
+                <div class="list-content">
+                    <div class="list-info">
+                        <div class="name">{{item.fullName}}</div>
+                        <div class="phone">{{item.phoneNumber}}</div>
+                    </div>
+                    <button class="rm-btn" onclick={{action this.removeValue index}}>Видалити</button>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+</section>
+{{outlet}}

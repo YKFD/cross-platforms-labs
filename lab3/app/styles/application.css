@@ -1,0 +1,7 @@
+.type-title{
+  text-align: center;
+  font-size: 26px;
+  font-family: var(--font-family);
+  color: var(--font-color);
+  font-weight: bold;
+}

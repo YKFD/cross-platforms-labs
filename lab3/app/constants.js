@@ -1,0 +1,1 @@
+export const COOKIES_CATEGORY = 'COOKIES_CATEGORY';

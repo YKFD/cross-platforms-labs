@@ -1,0 +1,9 @@
+:root{
+  --font-family: 'Roboto', sans-serif;
+  --font-color: #111111;
+  --border-color: #111111;
+  --header-background-color: #fca652;
+  --button-category-background-color: linear-gradient(133deg, rgba(252,166,82,1) 0%, rgba(255,213,126,1) 100%);
+  --button-post-background-color:  linear-gradient(133deg, rgba(252,166,82,1) 50%, rgba(255,213,126,1) 100%);
+}
+
