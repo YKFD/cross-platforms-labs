@@ -1,0 +1,2 @@
+export const BLOG_REPOSITORY = 'BLOG_REPOSITORY';
+export const BLOG_SERVICE = 'BLOG_SERVICE';
