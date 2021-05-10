@@ -50,8 +50,8 @@ app.on('ready', async () => {
   await handleFileUrls(emberAppDir);
 
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1920,
+    height: 1080,
   });
 
   // If you want to open up dev tools programmatically, call
