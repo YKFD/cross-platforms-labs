@@ -1,0 +1,11 @@
+<AppHeader/>
+{{#if (compare target.currentPath "index")}}
+  {{page-title "Home"}}
+  <div style="margin-top: 120px;">
+    {{#each posts as |post|}}
+      <h3 class="type-title">{{post.title}}</h3>
+      <PostButton @url="type/category/post" @data={{post.data}} @type={{to-lower-case post.title}} />
+    {{/each}}
+  </div>
+{{/if}}
+{{outlet}}

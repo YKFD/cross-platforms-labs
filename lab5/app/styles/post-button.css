@@ -1,0 +1,53 @@
+.post-buttons {
+  list-style: none;
+  padding: 0;
+}
+
+.post-button-element {
+  margin: 40px auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1000px;
+  min-width: 100px;
+  height: fit-content;
+  border-radius: 12px;
+  background: var(--button-post-background-color);
+}
+
+.post-button-element:hover {
+  opacity: 0.5;
+}
+
+.post-button {
+  text-decoration: none;
+  background-color: #FFFBF5;
+}
+
+.post-button-info {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.post-button-title {
+  width: 70%;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--font-family);
+  color: var(--font-color);
+  font-weight: normal;
+}
+
+.post-button-category {
+  width: 30%;
+  text-align: right;
+  padding-right: 25px;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: var(--font-family);
+  color: var(--font-color);
+  font-weight: normal;
+}
+

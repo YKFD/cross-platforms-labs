@@ -1,0 +1,12 @@
+{{page-title (first-letter-capitalize @model.type)}}
+<ul class="category-buttons">
+  {{#each @values as |value|}}
+    <li class="category-button">
+      <LinkTo class="category-button-link" @route={{@url}} @models={{array @type value.url}} @replace={{true}}>
+        <div class="category-button-text-block">{{value.name}}</div>
+      </LinkTo>
+    </li>
+  {{/each}}
+</ul>
+<PostButton @url="type/category/post" @type={{@model.type}} @data={{@model.data}}/>
+{{outlet}}

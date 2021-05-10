@@ -1,0 +1,28 @@
+.post-block {
+  padding: 10px 20%;
+}
+
+.post-title {
+  font-family: var(--font-family);
+  font-size: 32px;
+  color: var(--font-color);
+}
+
+.post-info{
+  margin-top: 30px;
+  color: var(--font-color);
+  line-height: 30px;
+  font-size: 20px;
+  font-family: var(--font-family);
+  text-align: justify;
+}
+
+.post-category{
+  font-size: 16px;
+  text-align: right;
+  font-family: var(--font-family);
+  color: var(--font-color);
+  margin-top: 100px;
+  text-transform: capitalize;
+}
+

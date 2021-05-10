@@ -1,0 +1,13 @@
+<ul class="app-header-block">
+  <li class="header-list-element">
+    <LinkTo class="header-list-value" @route="application">Home</LinkTo>
+  </li>
+  {{#each this.categories as |category|}}
+    <li class="header-list-element">
+      <LinkTo class="header-list-value" @route="type" @model={{to-lower-case
+              category.name}}>{{category.name}}</LinkTo>
+    </li>
+  {{/each}}
+</ul>
+<div class="header-margin"/>
+{{yield}}

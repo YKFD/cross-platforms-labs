@@ -1,0 +1,49 @@
+{
+  "name": "front-end",
+  "productName": "front-end",
+  "version": "0.0.0",
+  "description": "Small description for front-end goes here",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "ignore": [
+          "/ember-test(/|$)",
+          "/tests(/|$)"
+        ]
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "front_end"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
