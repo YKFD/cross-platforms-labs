@@ -23,6 +23,11 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
+    "@electron-forge/core": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.2.0",
     "@glimmer/component": "^1.0.3",
@@ -30,8 +35,10 @@
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "chalk": "^4.1.1",
+    "debug": "^4.1.1",
     "electron-devtools-installer": "^3.2.0",
     "electron-is-dev": "^2.0.0",
+    "electron-prebuilt-compile": "2.0.8",
     "electron-squirrel-startup": "^1.0.0",
     "ember-auto-import": "^1.10.1",
     "ember-cli": "~3.25.0",
@@ -43,7 +50,7 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.1",
     "ember-data": "~3.25.0",
-    "ember-electron": "^3.1.0",
+    "ember-electron": "github:felixrieseberg/ember-electron#master",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.0.4",
     "ember-load-initializers": "^2.1.2",
@@ -59,11 +66,20 @@
     "eslint-plugin-ember": "^10.2.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "execa": "^5.0.0",
+    "find-yarn-workspace-root": "^2.0.0",
     "loader.js": "^4.7.0",
+    "ncp": "^2.0.0",
     "npm-run-all": "^4.1.5",
+    "portfinder": "^1.0.25",
     "prettier": "^2.2.1",
     "qunit": "^2.14.0",
-    "qunit-dom": "^1.6.0"
+    "qunit-dom": "^1.6.0",
+    "rimraf": "^3.0.2",
+    "rpmbuild": "^0.0.23",
+    "silent-error": "^1.1.1",
+    "tree-kill": "^1.2.2",
+    "yawn-yaml": "^1.5.0"
   },
   "engines": {
     "node": "10.* || >= 12"

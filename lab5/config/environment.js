@@ -12,9 +12,17 @@ module.exports = function (environment) {
       ? ''
       : process.env.EMBER_CLI_ELECTRON
       ? ''
+      : process.env.EMBER_CLI_ELECTRON
+      ? ''
+      : process.env.EMBER_CLI_ELECTRON
+      ? ''
       : '/',
     apiURL: 'http://localhost:3000/',
     locationType: process.env.EMBER_CLI_ELECTRON
+      ? 'hash'
+      : process.env.EMBER_CLI_ELECTRON
+      ? 'hash'
+      : process.env.EMBER_CLI_ELECTRON
       ? 'hash'
       : process.env.EMBER_CLI_ELECTRON
       ? 'hash'

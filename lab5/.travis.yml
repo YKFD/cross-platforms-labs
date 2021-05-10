@@ -34,3 +34,5 @@ install:
   - cd electron-app && yarn install --non-interactive
   - cd electron-app && yarn install --non-interactive
   - cd electron-app && yarn install --non-interactive
+  - cd electron-app && yarn install --non-interactive
+  - cd electron-app && yarn install --non-interactive
